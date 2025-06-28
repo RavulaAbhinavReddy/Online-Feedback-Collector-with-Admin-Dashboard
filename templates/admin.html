@@ -1,0 +1,84 @@
+{% extends 'layout.html' %}
+
+{% block title %}Admin Dashboard{% endblock %}
+
+{% block content %}
+<h2 class="text-primary mb-4">Admin Dashboard</h2>
+
+<div class="row mb-4">
+    <div class="col-md-4">
+        <div class="card shadow-sm p-3">
+            <h5>Total Feedback</h5>
+            <p class="fs-4">{{ total_feedback }}</p>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card shadow-sm p-3">
+            <h5>Average Rating</h5>
+            <p class="fs-4">{{ avg_rating }}</p>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card shadow-sm p-3">
+            <h5>Export</h5>
+            <a href="/export" class="btn btn-outline-primary">Download CSV</a>
+        </div>
+    </div>
+</div>
+
+<div class="table-responsive mb-5">
+    <table class="table table-bordered table-striped">
+        <thead class="table-primary">
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Rating</th>
+                <th>Comments</th>
+                <th>Date</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for fb in feedback_list %}
+            <tr>
+                <td>{{ fb.id }}</td>
+                <td>{{ fb.name }}</td>
+                <td>{{ fb.email }}</td>
+                <td>{{ fb.rating }}</td>
+                <td>{{ fb.comments }}</td>
+                <td>{{ fb.date_submitted }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+
+<canvas id="ratingChart" width="600" height="300"></canvas>
+
+{% endblock %}
+
+{% block scripts %}
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script>
+    const ctx = document.getElementById('ratingChart').getContext('2d');
+    const ratingChart = new Chart(ctx, {
+        type: 'bar',
+        data: {
+            labels: [1, 2, 3, 4, 5],
+            datasets: [{
+                label: 'Feedback Count by Rating',
+                data: {{ chart_data | safe }},
+                backgroundColor: 'rgba(54, 162, 235, 0.7)',
+                borderRadius: 6
+            }]
+        },
+        options: {
+            scales: {
+                y: {
+                    beginAtZero: true
+                }
+            }
+        }
+    });
+</script>
+{% endblock %}

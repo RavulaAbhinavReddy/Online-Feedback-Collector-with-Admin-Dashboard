@@ -1,0 +1,97 @@
+/* General Reset and Body Styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f8f9fa;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+.container {
+    padding-top: 30px;
+}
+
+/* Header & NavBar */
+.navbar {
+    background-color: #4b6cb7;
+    background-image: linear-gradient(to right, #182848, #4b6cb7);
+}
+
+.navbar-brand, .nav-link {
+    color: white !important;
+    font-weight: 600;
+}
+
+.nav-link:hover {
+    color: #e2e6ea !important;
+}
+
+/* Forms */
+form label {
+    font-weight: 600;
+}
+
+input, textarea, select {
+    border-radius: 5px !important;
+}
+
+.btn-primary {
+    background-color: #4b6cb7;
+    border-color: #4b6cb7;
+}
+
+.btn-primary:hover {
+    background-color: #3a55a0;
+}
+
+/* Table */
+.table {
+    background-color: white;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.table thead {
+    background-color: #4b6cb7;
+    color: white;
+}
+
+.table-striped tbody tr:nth-child(odd) {
+    background-color: #f2f2f2;
+}
+
+/* Cards */
+.card {
+    border: none;
+    border-radius: 8px;
+    background-color: #ffffff;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Badge Styling */
+.badge {
+    padding: 0.5em 0.75em;
+    font-size: 0.85em;
+    border-radius: 8px;
+}
+
+.badge.bg-success {
+    background-color: #198754 !important;
+}
+
+.badge.bg-danger {
+    background-color: #dc3545 !important;
+}
+
+.badge.bg-secondary {
+    background-color: #6c757d !important;
+}
+
+/* Footer (Optional) */
+.footer {
+    background-color: #182848;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    margin-top: 40px;
+}
