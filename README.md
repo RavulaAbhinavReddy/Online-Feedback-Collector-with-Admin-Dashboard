@@ -35,68 +35,7 @@
 
 ---
 
-## 🧩 Project Structure
 
-OnlineFeedbackCollector/
-│
-├── app.py # Flask backend
-├── requirements.txt # Python dependencies
-├── database.db # SQLite DB
-│
-├── static/
-│ ├── css/
-│ │ └── style.css # Custom styles
-│ └── js/
-│ └── script.js # (Optional) JS for validation
-│
-├── templates/
-│ ├── index.html # Feedback form
-│ ├── login.html # Admin login
-│ ├── admin.html # Admin dashboard
-│ └── layout.html # Base layout template
-│
-└── README.md # You're here!
-
-yaml
-Copy
-Edit
-
----
-
-## 📦 How to Run
-
-1. 🔽 **Clone the repository**
-
-```bash
-git clone https://github.com/RavulaAbhinavReddy/Online-Feedback-Collector-with-Admin-Dashboard.git
-cd OnlineFeedbackCollector
-🐍 Create Virtual Environment (optional but recommended)
-
-bash
-Copy
-Edit
-python -m venv venv
-venv\Scripts\activate  # Windows
-📦 Install Dependencies
-
-bash
-Copy
-Edit
-pip install -r requirements.txt
-🚀 Run the Flask App
-
-bash
-Copy
-Edit
-python app.py
-App will be available at: http://localhost:5000
-
-🔑 Admin Login
-Use this to access the dashboard:
-
-Username: admin
-
-Password: admin123
 
 💡 You can insert this user manually in the database using SQLite tools or a script.
 
