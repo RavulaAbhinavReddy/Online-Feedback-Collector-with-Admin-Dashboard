@@ -40,6 +40,7 @@
 💡 You can insert this user manually in the database using SQLite tools or a script.
 
 📊 Sample Dashboard
+
 Total Feedback Count
 
 Average Ratings
@@ -48,14 +49,18 @@ Rating Distribution Chart
 
 Feedback Table
 
+
 ✨ Future Enhancements
+
 🛡️ Add authentication hashing
 
 📧 Email notifications on feedback
 
 ☁️ Deploy to Render or Railway
 
+
 🧠 Skills You’ll Learn
+
 Flask & Routing
 
 HTML Forms and POST methods
