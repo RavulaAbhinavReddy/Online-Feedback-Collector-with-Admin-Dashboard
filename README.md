@@ -35,40 +35,26 @@
 
 ---
 
+## ✨ Future Enhancements
 
+- 🛡️ Add authentication hashing
 
-💡 You can insert this user manually in the database using SQLite tools or a script.
+- 📧 Email notifications on feedback
 
-📊 Sample Dashboard
+- ☁️ Deploy to Render or Railway
 
-Total Feedback Count
+---
 
-Average Ratings
+## 🧠 Skills You’ll Learn
 
-Rating Distribution Chart
+- Flask & Routing
 
-Feedback Table
+- HTML Forms and POST methods
 
+- Connecting Frontend with Backend
 
-✨ Future Enhancements
+- CRUD with SQLite
 
-🛡️ Add authentication hashing
+- Dashboard & Data Visualization
 
-📧 Email notifications on feedback
-
-☁️ Deploy to Render or Railway
-
-
-🧠 Skills You’ll Learn
-
-Flask & Routing
-
-HTML Forms and POST methods
-
-Connecting Frontend with Backend
-
-CRUD with SQLite
-
-Dashboard & Data Visualization
-
-Hosting a Web Project
+- Hosting a Web Project
